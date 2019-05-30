@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "spec-version": "1.0"
+  },
+  "configuration-groups": [
+    {
+      "label": "XML Schema Action Configuration",
+      "properties": [
+        {
+          "widget-type": "textbox",
+          "label": "XML Schema (XSD) File Path",
+          "name": "xsdPath"
+        },
+        {
+          "widget-type": "select",
+          "label": "Ignore XML Schema Error",
+          "name": "ignoreSchemaError",
+          "widget-attributes": {
+            "values": [
+              "true",
+              "false"
+            ],
+            "default": "true"
+          }
+        },
+        {
+          "widget-type": "textbox",
+          "label": "Accepted Record Names",
+          "name": "acceptRecords"
+        },
+        {
+          "widget-type": "textbox",
+          "label": "Avro Schema Argument Name",
+          "name": "avroSchemaName",
+          "widget-attributes" : {
+            "default" : "xml.avro.schema"
+          }
+        },
+        {
+          "widget-type": "textbox",
+          "label": "Schema Argument Name",
+          "name": "schemaName",
+          "widget-attributes" : {
+            "default" : "xml.cdap.schema"
+          }
+        }
+      ]
+    }
+  ],
+  "outputs": [ ]
+}
